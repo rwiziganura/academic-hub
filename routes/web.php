@@ -18,7 +18,7 @@ Route::middleware('guest')->group(function () {
 Route::middleware('auth')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
     Route::get('/dashboard', function () {
-        return view('dashboard');
+        return view('dashboard', ['title' => 'Dashboard']);
     })->name('dashboard');
 
     // Student Management Routes

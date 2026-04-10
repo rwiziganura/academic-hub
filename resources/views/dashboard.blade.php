@@ -1,8 +1,4 @@
-@extends('layout')
-
-@section('title', 'Dashboard')
-
-@section('content')
+<x-layout title="Dashboard">
     <!-- Show success message if user just logged in -->
     @if(session('success'))
         <div class="alert alert-success">
@@ -27,5 +23,5 @@
         <a href="/students/create_student" style="display: inline-block; background-color: #3498db; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; margin-right: 10px;">Create Student</a>
         <a href="/" style="display: inline-block; background-color: #95a5a6; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px;">View Students</a>
     </div>
-@endsection
+</x-layout>
 

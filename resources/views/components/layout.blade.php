@@ -1,8 +1,10 @@
 
+@props(['title' => 'Academic Hub'])
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Academic Hub</title>
+    <title>{{ $title }} - Academic Hub</title>
     <style>
         body {
             font-family: Arial;

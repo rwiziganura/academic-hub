@@ -14,7 +14,7 @@ class AuthController extends Controller
      */
     public function showRegister()
     {
-        return view('register');
+        return view('register', ['title' => 'Register']);
     }
 
     /**
@@ -48,7 +48,7 @@ class AuthController extends Controller
      */
     public function showLogin()
     {
-        return view('login');
+        return view('login', ['title' => 'Login']);
     }
 
     /**
